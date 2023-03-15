@@ -6,7 +6,7 @@ import { useGetCryptoQuery } from '../app/services/cryptoApi';
 import { useGetCryptoNewsQuery } from '../app/services/cryptoNewsApi';
 import {Loader} from '../components/Loader';
 
-const demoImage = '../assets/images/no-content.png';
+const demoImage = 'src/assets/images/no-content.png';
 
 const { Text, Title } = Typography;
 const { Option } = Select;
