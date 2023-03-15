@@ -11,8 +11,6 @@ const { Panel } = Collapse;
 export const Exchanges = () => {
     const { data, isFetching } = useGetExchangesQuery({uuid: 'Qwsogvtv82FCd'});
     const exchangesList = data?.data?.exchanges;
-    console.log("🚀🚀🚀 ~ file: Exchanges.jsx:15 ~ Exchanges ~ exchangesList:", exchangesList)
-
     if (isFetching) return <Loader />;
 
     return (
