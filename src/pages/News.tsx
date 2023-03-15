@@ -6,7 +6,7 @@ import { useGetCryptoQuery } from '../app/services/cryptoApi';
 import { useGetCryptoNewsQuery } from '../app/services/cryptoNewsApi';
 import {Loader} from '../components/Loader';
 
-const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
+const demoImage = '../assets/images/no-content.png';
 
 const { Text, Title } = Typography;
 const { Option } = Select;
