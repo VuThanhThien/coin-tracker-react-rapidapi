@@ -11,7 +11,7 @@ To run by docker
 ```
 docker compose up
 ```
-[![Next][Next.js]][Next-url]
+
 ## Demo
 
 https://ale-coin-tracker.netlify.app/
