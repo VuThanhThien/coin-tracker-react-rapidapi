@@ -39,10 +39,10 @@ export const CryptoDetails = () => {
         data: coinHistory,
         isFetching: fecthingHistory,
         error: historyEror,
-    } = useGetCryptoHistoryQuery({ uuid,referenceCurrencyUuid: ReferenceCurrencyUuid.USDollar, timePeriod: timeperiod });
+    } = useGetCryptoHistoryQuery({ uuid, referenceCurrencyUuid: ReferenceCurrencyUuid.USDollar, timePeriod: timeperiod });
     const cryptoDetails = data?.data?.coin;
 
-    if (isFetching) return <Loader />;
+    if (isFetching) return (<Loader />);
     if (isError) {
         return (
             <ErrorPage
@@ -117,6 +117,7 @@ export const CryptoDetails = () => {
     ];
 
     return (
+        cryptoDetails &&
         <Col className="coin-detail-container">
             <Col className="coin-heading-container">
                 <Title level={2} className="coin-name">
