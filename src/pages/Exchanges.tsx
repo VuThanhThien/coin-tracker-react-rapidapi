@@ -25,7 +25,7 @@ export const Exchanges = () => {
                 {
                     !!exchangesList.length && data.status === 'success' &&
                     exchangesList.map((exchange: any) => (
-                    <Col span={24} >
+                    <Col span={24} key={exchange.uuid}>
                         <Collapse >
                             <Panel
                                 key={exchange?.id}
